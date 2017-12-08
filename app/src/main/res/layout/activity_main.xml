@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.conseng.southparkcharacters.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageKennyMcCormick"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_column="0"
+        android:layout_marginStart="32dp"
+        android:layout_row="0"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageEricCartman"
+        app:layout_constraintTop_toTopOf="@+id/imageEricCartman"
+        app:srcCompat="@drawable/kenny_mc_cormick" />
+
+    <ImageView
+        android:id="@+id/imageStanMarsh"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_column="1"
+        android:layout_marginStart="32dp"
+        android:layout_row="0"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageKyleBroflovski"
+        app:layout_constraintTop_toTopOf="@+id/imageKyleBroflovski"
+        app:srcCompat="@drawable/stan_marsh" />
+
+    <ImageView
+        android:id="@+id/imageEricCartman"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_column="0"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_row="1"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eric_cartman" />
+
+    <ImageView
+        android:id="@+id/imageKyleBroflovski"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_column="1"
+        android:layout_marginTop="32dp"
+        android:layout_row="1"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/imageEricCartman"
+        app:layout_constraintTop_toBottomOf="@+id/imageEricCartman"
+        app:srcCompat="@drawable/kyle_broflovski" />
+
+</android.support.constraint.ConstraintLayout>
